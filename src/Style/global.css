@@ -14,15 +14,8 @@ align-items: center;
 Justify-content:center;
 flex-direction:column;
 }
-.txt{
-height: 30px;
-width:280px;
-border-radius: 10px;
+.input-focussed{
+    border-color: red;
 }
 
-.Box{
-    height: 50px;
-    width:90px;
-    border:black solid 2px;
-    margin: 10px 10px;
-}
+

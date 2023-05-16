@@ -4,7 +4,6 @@ import React from 'react';
 const App=()=> {
   const [formData, setFormData]=React.useState({
     name:"Bing",
-    value:" "
   })
   function toggleChange(event){
     const {name,value}=event.target
@@ -12,17 +11,33 @@ const App=()=> {
       ...previousData,[name]:value
     }))
   }
+  const styles={
+    
+      height: "50px",
+      width:"90px",
+      border:'none',
+      margin:"10px 10px",
+      backgroundColor:`${formData.name}`
+  
+  }
+  const Style={
+    height:"30px",
+    width:"300px",
+    border:'black solid 0.5px',
+    borderRadius:'10px',
+    borderColor:formData.name.length<4 ?'red':"green"
+  }
   return (
 <div className="form">
-<div className='Box'>
+<div className='Box' style={styles}>
 
 </div>
   <form>
     <input
       type='text'
-      className='txt'
-      name={formData.name}
-      value={formData.value}
+      style={Style}
+      name='name'
+      value={formData.name}
       onChange={toggleChange}
     />
   </form>
