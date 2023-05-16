@@ -1,3 +1,28 @@
 *{
-    background-color:#f51515;
+    background-color:#fbfbfb;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.form{
+width: vw;
+height: 100vh;
+ display:flex;
+align-items: center;
+Justify-content:center;
+flex-direction:column;
+}
+.txt{
+height: 30px;
+width:280px;
+border-radius: 10px;
+}
+
+.Box{
+    height: 50px;
+    width:90px;
+    border:black solid 2px;
+    margin: 10px 10px;
 }
