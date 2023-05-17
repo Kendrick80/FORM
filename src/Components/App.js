@@ -21,7 +21,7 @@ const App=()=> {
   
   }
   const Style={
-    height:"30px",
+    height:"50px",
     width:"300px",
     border:'black solid 0.5px',
     borderRadius:'10px',
